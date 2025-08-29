@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3051886E-AC4D-4EC6-8568-73E72B73D7B4}|ex1\\ex1.csproj|c:\\users\\dkz\\downloads\\ex c#\\ex1\\ex1\\tempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3051886E-AC4D-4EC6-8568-73E72B73D7B4}|ex1\\ex1.csproj|solutionrelative:ex1\\tempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3051886E-AC4D-4EC6-8568-73E72B73D7B4}|ex1\\ex1.csproj|c:\\users\\dkz\\downloads\\ex c#\\ex1\\ex1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3051886E-AC4D-4EC6-8568-73E72B73D7B4}|ex1\\ex1.csproj|solutionrelative:ex1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 295,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1\\ex1\\Program.cs",
+              "RelativeDocumentMoniker": "ex1\\Program.cs",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1\\ex1\\Program.cs",
+              "RelativeToolTip": "ex1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T00:30:30.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tempo.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1\\ex1\\Tempo.cs",
+              "RelativeDocumentMoniker": "ex1\\Tempo.cs",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1\\ex1\\Tempo.cs",
+              "RelativeToolTip": "ex1\\Tempo.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T01:15:55.517Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
