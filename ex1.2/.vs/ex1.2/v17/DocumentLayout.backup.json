@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1.2\\",
+  "WorkspaceRootPath": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\ex1.2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{419ED3F6-3A68-4C33-B602-BC82EF644A7E}|ex1.2\\ex1.2.csproj|c:\\users\\dkz\\downloads\\ex c#\\ex1.2\\ex1.2\\lampada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{419ED3F6-3A68-4C33-B602-BC82EF644A7E}|ex1.2\\ex1.2.csproj|c:\\users\\dkz\\downloads\\ex c#\\treinando-c#\\ex1.2\\ex1.2\\lampada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{419ED3F6-3A68-4C33-B602-BC82EF644A7E}|ex1.2\\ex1.2.csproj|solutionrelative:ex1.2\\lampada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{419ED3F6-3A68-4C33-B602-BC82EF644A7E}|ex1.2\\ex1.2.csproj|c:\\users\\dkz\\downloads\\ex c#\\ex1.2\\ex1.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{419ED3F6-3A68-4C33-B602-BC82EF644A7E}|ex1.2\\ex1.2.csproj|c:\\users\\dkz\\downloads\\ex c#\\treinando-c#\\ex1.2\\ex1.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{419ED3F6-3A68-4C33-B602-BC82EF644A7E}|ex1.2\\ex1.2.csproj|solutionrelative:ex1.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Lampada.cs",
-              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1.2\\ex1.2\\Lampada.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\ex1.2\\ex1.2\\Lampada.cs",
               "RelativeDocumentMoniker": "ex1.2\\Lampada.cs",
-              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1.2\\ex1.2\\Lampada.cs*",
-              "RelativeToolTip": "ex1.2\\Lampada.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBoAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\ex1.2\\ex1.2\\Lampada.cs",
+              "RelativeToolTip": "ex1.2\\Lampada.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-29T12:09:23.805Z",
               "EditorCaption": ""
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1.2\\ex1.2\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\ex1.2\\ex1.2\\Program.cs",
               "RelativeDocumentMoniker": "ex1.2\\Program.cs",
-              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\ex1.2\\ex1.2\\Program.cs",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\ex1.2\\ex1.2\\Program.cs",
               "RelativeToolTip": "ex1.2\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:06:22.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T12:06:22.768Z"
             }
           ]
         }
