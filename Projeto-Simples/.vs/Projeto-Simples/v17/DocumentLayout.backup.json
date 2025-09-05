@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|c:\\users\\dkz\\downloads\\ex c#\\treinando-c#\\projeto-simples\\projeto-simples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|solutionrelative:projeto-simples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|c:\\users\\dkz\\downloads\\ex c#\\treinando-c#\\projeto-simples\\projeto-simples\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|solutionrelative:projeto-simples\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|c:\\users\\dkz\\downloads\\ex c#\\treinando-c#\\projeto-simples\\projeto-simples\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|solutionrelative:projeto-simples\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|c:\\users\\dkz\\downloads\\ex c#\\treinando-c#\\projeto-simples\\projeto-simples\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B74036-7332-4E35-BE14-C2E33AAF433D}|Projeto-Simples\\Projeto-Simples.csproj|solutionrelative:projeto-simples\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Budget.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Budget.cs",
+              "RelativeDocumentMoniker": "Projeto-Simples\\Budget.cs",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Budget.cs",
+              "RelativeToolTip": "Projeto-Simples\\Budget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T19:04:28.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Product.cs",
+              "RelativeDocumentMoniker": "Projeto-Simples\\Product.cs",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Product.cs",
+              "RelativeToolTip": "Projeto-Simples\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T19:03:15.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Client.cs",
+              "RelativeDocumentMoniker": "Projeto-Simples\\Client.cs",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Client.cs",
+              "RelativeToolTip": "Projeto-Simples\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T19:02:16.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Program.cs",
+              "RelativeDocumentMoniker": "Projeto-Simples\\Program.cs",
+              "ToolTip": "C:\\Users\\Dkz\\Downloads\\ex C#\\Treinando-C#\\Projeto-Simples\\Projeto-Simples\\Program.cs*",
+              "RelativeToolTip": "Projeto-Simples\\Program.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T19:00:08.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
