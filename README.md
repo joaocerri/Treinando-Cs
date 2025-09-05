@@ -20,4 +20,4 @@ Este repositório tem como finalidade:
 ## 🔗 Como executar
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+   git clone https://github.com/joaocerri/Treinando-Cs.git
