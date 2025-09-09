@@ -20,38 +20,19 @@ namespace ex2
         }
         public void Set(int dia, int mes, int ano)
         {
-            if(dia>=1 && dia<=31)
-            {
-                Dia = dia;
-            }
-            if(mes>=1 && mes<=12)
-            {
-                Mes = mes;
-            }
+                Dia = (dia >= 1 && dia <= 31) ? dia : Dia;
 
-            if(ano>=1000 && ano<=2025)
-            {
-                Ano = ano;
-            }
+                Mes = (mes >= 1 && mes <= 12) ?  mes : Mes;
+ 
+                Ano = (ano >= 1000 && ano <= 2025) ? ano : Ano;
+            
         }
-        public int GetAno()
-        {
-            return Ano;
-        }
+        public int GetAno() => Ano;
 
-        public int GetMes()
-        {
-            return Mes;
-        }
-        public int GetDia()
-        {
-            return Dia;
-        }
+        public int GetMes() => Mes;
+        public int GetDia() => Dia;
 
-        public string DataFormatada()
-        {
-            return $"{Dia:D2}/{Mes:D2}/{Ano}";
-        }
+        public string DataFormatada() => $"{Dia:D2}/{Mes:D2}/{Ano}";
 
         public string DataExtenso()
         {
