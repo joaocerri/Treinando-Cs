@@ -1,0 +1,69 @@
+# Pasta de configuração do Visual Studio
+.vs/
+
+# Diretórios de build
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Tt]emp/
+
+# Arquivos de cache e index
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+
+# Diretórios de publicação
+publish/
+[Pp]ublishProfiles/
+
+# Pacotes NuGet (restauráveis)
+*.nupkg
+*.snupkg
+*.nuspec
+*.nuget
+packages/
+*.dll
+*.exe
+*.pdb
+
+# Configurações locais
+*.local.json
+appsettings.Development.json
+
+# Diretórios de testes e resultados
+TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+
+# Diretórios de cache do Resharper e Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# Arquivos gerados pelo MSBuild
+project.lock.json
+project.fragment.lock.json
+
+# Arquivos do Azure
+*.Publish.xml
+*.azurePubxml
+
+# Arquivos de backup
+*.bak
+*.orig
+
+# Diretórios de migração de banco local
+migrations/
+
+# Arquivos de sandbox e experimentos
+*.swp
+*.swo
