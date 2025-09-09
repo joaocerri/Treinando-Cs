@@ -15,7 +15,7 @@ Este repositório tem como finalidade:
 
 ## 🚀 Tecnologias
 - Linguagem: **C#**
-- IDE/Editor: Visual Studio / VS Code  
+- IDE/Editor: Visual Studio
 
 ## 🔗 Como executar
 1. Clone este repositório:
