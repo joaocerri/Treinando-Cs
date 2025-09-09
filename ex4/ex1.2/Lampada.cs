@@ -16,23 +16,14 @@ namespace ex1._2
 
         public void Acender()
         {
-            if(estado == "" || estado == "Desligada")
-            {
-                this.estado = "Ligada"; 
-            }   
+                this.estado = (estado == "" || estado == "Desligada") ? "Ligada" : this.estado; 
         }
         public void Apagar()
         {
-            if(estado == "Ligada")
-            {
-                this.estado = "Desligada"; 
-            }   
+                this.estado = (estado == "Ligada") ? "Desligada" : this.estado; 
         }
 
-        public string MostrarEstado() 
-        { 
-            return this.estado; 
-        }
+        public string MostrarEstado() => this.estado; 
         
     }
 }
