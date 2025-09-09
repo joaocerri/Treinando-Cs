@@ -21,30 +21,18 @@
                 this.valorHorasExtra = 0;
             }
 
-            public Funcionario(string nome, double salarioBase, double quantidadeHorasExtra, double valorHorasExtra)
-            {
-                this.nome = nome;
-                if (salarioBase >= 954.00)
-                {
-                    this.salarioBase = salarioBase;
-                }
+        public Funcionario(string nome, double salarioBase, double quantidadeHorasExtra, double valorHorasExtra)
+        {
+            this.nome = nome;
 
-                if (quantidadeHorasExtra <= 10)
-                { 
-                    this.quantidadeHorasExtra = quantidadeHorasExtra;
-                }
+            this.salarioBase = (salarioBase >= 954.00) ? salarioBase : this.salarioBase;
 
-                if (valorHorasExtra >= 10.00)
-                {
-                    this.valorHorasExtra = valorHorasExtra;
-                }
-            }
+            this.quantidadeHorasExtra = (quantidadeHorasExtra <= 10) ? quantidadeHorasExtra : this.quantidadeHorasExtra;
 
-            public double calcularSalario()
-            {
-                return salarioBase + (quantidadeHorasExtra * valorHorasExtra);
-            }
+            this.valorHorasExtra = (valorHorasExtra >= 10.00) ? valorHorasExtra : this.valorHorasExtra;
+        }
 
+            public double calcularSalario() => salarioBase + (quantidadeHorasExtra * valorHorasExtra);
             public void GerarRelatorio()
             {
                 Console.WriteLine($"Nome: {nome}");
@@ -72,45 +60,37 @@
                             Console.WriteLine("Digite o novo nome:");
                             nome = Console.ReadLine();
                             break;
+                        
                         case 2:
                             Console.WriteLine("Digite o novo salário base:");
                             double novoSalarioBase = double.Parse(Console.ReadLine());
                             if (novoSalarioBase >= 954.00)
-                            {
                                 salarioBase = novoSalarioBase;
-                            }
                             else
-                            {
-                                Console.WriteLine("Salário base deve ser maior ou igual a R$954,00");
-                            }
-                            break;
+                                Console.WriteLine("Salário base deve ser maior ou igual a R$954,00");   
+                        break;
+                        
                         case 3:
                             Console.WriteLine("Digite a nova quantidade de horas extra:");
                             double novaQuantidadeHorasExtra = double.Parse(Console.ReadLine());
                             if (novaQuantidadeHorasExtra <= 10)
-                            {
-                                quantidadeHorasExtra = novaQuantidadeHorasExtra;
-                            }
+                              quantidadeHorasExtra = novaQuantidadeHorasExtra;
                             else
-                            {
                                 Console.WriteLine("Quantidade de horas extra deve ser menor ou igual a 10");
-                            }
-                            break;
-                        case 4:
+                        break;
+                        
+                         case 4:
                             Console.WriteLine("Digite o novo valor da hora extra:");
                             double novoValorHorasExtra = double.Parse(Console.ReadLine());
                             if (novoValorHorasExtra >= 10.00)
-                            {
                                 valorHorasExtra = novoValorHorasExtra;
-                            }
                             else
-                            {
                                 Console.WriteLine("Valor da hora extra deve ser maior ou igual a R$10,00");
-                            }
-                            break;
+                         break;
+                        
                         default:
                             Console.WriteLine("Opção inválida");
-                            break;
+                        break;
                     }
                     Console.WriteLine("\n\nRelatório atualizado:");
                     GerarRelatorio();
