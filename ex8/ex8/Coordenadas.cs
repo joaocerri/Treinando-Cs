@@ -17,10 +17,10 @@ namespace ex8
 
         public void VerificarQuadrante()
         {
-            if(x > 0 && y > 0) { Quadrante = "1º"; }
-            if(x > 0 && y < 0) { Quadrante = "2º"; }
-            if(x < 0 && y < 0) { Quadrante = "3º"; }
-            if(x < 0 && y > 0) { Quadrante = "4º"; }
+            Quadrante = (x > 0 && y > 0) ? "1º" : Quadrante;
+            Quadrante = (x > 0 && y < 0) ? "2º" : Quadrante;
+            Quadrante = (x < 0 && y < 0) ? "3º" : Quadrante; 
+            Quadrante = (x < 0 && y > 0) ? "4º" : Quadrante; 
         }
 
         public string GetQuadrante()
