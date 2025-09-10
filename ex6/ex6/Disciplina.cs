@@ -41,6 +41,7 @@ namespace ex6
             
             conceito = (Media() > 6) ? "Aprovado" : "Reprovado";
            
+            return conceito;
         }
 
 
