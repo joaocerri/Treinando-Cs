@@ -25,35 +25,22 @@ namespace ex6
 
 
         public void SetNota1Bi(double nota1bi) 
-        {
-            if (Nota1Bi >= 0 && Nota1Bi <= 10.0)
-            {
-                this.Nota1Bi = nota1bi;
-            }
+        {   
+                this.Nota1Bi = (Nota1Bi >= 0 && Nota1Bi <= 10.0) ? nota1bi : this.Nota1Bi ; 
         }
         public void SetNota2Bi(double nota2bi)
         {
-            if (Nota2Bi >= 0 && Nota2Bi <= 10.0)
-            {
-                this.Nota2Bi = nota2bi;
-            }
+            this.Nota2Bi = (Nota2Bi >= 0 && Nota2Bi <= 10.0) ? nota2bi : this.Nota2Bi;
         }
 
         public double Media() => ((Nota1Bi + Nota2Bi) / 2);
 
         public string Conceito() 
         {
-            string conceito = "";
-
-            if (Media()>6) 
-            {
-                conceito = "Aprovado";
-            }
-            else 
-            {
-                conceito = "Reprovado";
-            }
-                return conceito; 
+            string conceito = ""; 
+            
+            conceito = (Media() > 6) ? "Aprovado" : "Reprovado";
+           
         }
 
 
