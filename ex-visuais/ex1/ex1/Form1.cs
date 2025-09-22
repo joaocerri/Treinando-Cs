@@ -12,22 +12,21 @@ namespace ex1
 {
     public partial class FrmMain : Form
     {
-        int counter;
+        int contador;
         public FrmMain()
         {
             InitializeComponent();
         }
 
+        private void btnClique_Click(object sender, EventArgs e)
+        {
+            contador++;
+            lblCliques.Text = contador.ToString();
+        }
+
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            counter = 0;
-
-           lblCliques.Text = counter.ToString();
+            contador = 0;
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            counter++;
-        }
-
     }
 }
