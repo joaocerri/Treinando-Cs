@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button btnLimpar;
             this.btnCalcular = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbDivisao = new System.Windows.Forms.RadioButton();
@@ -43,6 +44,7 @@
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            btnLimpar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -51,9 +53,9 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(12, 270);
+            this.btnCalcular.Location = new System.Drawing.Point(17, 276);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(527, 57);
+            this.btnCalcular.Size = new System.Drawing.Size(220, 57);
             this.btnCalcular.TabIndex = 0;
             this.btnCalcular.Text = "Calculate";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -200,11 +202,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Segundo Valor:";
             // 
+            // btnLimpar
+            // 
+            btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            btnLimpar.Location = new System.Drawing.Point(260, 276);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new System.Drawing.Size(261, 57);
+            btnLimpar.TabIndex = 4;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 354);
+            this.Controls.Add(btnLimpar);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

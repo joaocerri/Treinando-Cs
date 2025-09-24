@@ -63,5 +63,11 @@ namespace ex4
             lblOp.Text = "Divisão";
             txtResultado.Clear();
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNum1.Clear();
+            txtNum2.Clear();
+        }
     }
 }
