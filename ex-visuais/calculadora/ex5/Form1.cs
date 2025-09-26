@@ -47,7 +47,7 @@ namespace ex5
             {
                 var resultado = new DataTable().Compute(expressao, null);
                 txtExibicao.Text = resultado.ToString();
-                expressao = resultado.ToString(); // para continuar cálculo
+                expressao = resultado.ToString(); 
             }
             catch
             {
