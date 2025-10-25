@@ -15,7 +15,6 @@ namespace JogodaVelha
     {
         bool vezDoX;
         int jogadas;
-        
         public Form1()
         {
             InitializeComponent();
@@ -56,6 +55,7 @@ namespace JogodaVelha
                 else
                     lblO.Text = (int.Parse(lblO.Text) + 1).ToString();
 
+                txtVencedor.Text = vezDoX ? "X VENCEU!!!" : "O VENCEU!!!";
                 MessageBox.Show("O vencedor é: " + (vezDoX ? "X" : "O"));
                 LimparTabuleiro();
                 jogadas = 0;
@@ -66,6 +66,7 @@ namespace JogodaVelha
             {     
                 lblEmpate.Text = (int.Parse(lblEmpate.Text) + 1).ToString();
                 MessageBox.Show("EMPATE!!!");
+                txtVencedor.Text = "EMPATE";
                 LimparTabuleiro();
             }
             else
@@ -82,15 +83,49 @@ namespace JogodaVelha
             };
             for(int i = 0; i < 3; i++)
             {
-                if (matriz[i,0] != "" && matriz[i,0] == matriz[i,1] && matriz[i,1] == matriz[i,2])
-                       return true;
+                if (matriz[i, 0] != "" && matriz[i, 0] == matriz[i, 1] && matriz[i, 1] == matriz[i, 2]) 
+                {
+                    if (i == 0)
+                        btn1.BackColor = btn2.BackColor = btn3.BackColor = Color.LightGreen;
+
+                    else if (i == 1)
+                        btn4.BackColor = btn5.BackColor = btn6.BackColor = Color.LightGreen;
+
+                    else
+                        btn7.BackColor = btn8.BackColor = btn9.BackColor = Color.LightGreen;
+                    return true;
+                }
+                    
+              
                 if (matriz[0, i] != "" && matriz[0, i] == matriz[1, i] && matriz[1, i] == matriz[2, i])
-                       return true;
+                {
+                    if (i == 0)
+                        btn1.BackColor = btn4.BackColor = btn7.BackColor = Color.LightGreen;
+
+                    else if (i == 1)
+                        btn2.BackColor = btn5.BackColor = btn8.BackColor = Color.LightGreen;
+
+                    else
+                        btn3.BackColor = btn6.BackColor = btn9.BackColor = Color.LightGreen;
+                    return true;
+                }    
+                    
+
+                /*if (matriz[i, 0] != "" && matriz[i, 0] == matriz[i, 1] && matriz[i, 1] == matriz[i, 2])
+                    return true;
+                if (matriz[0, i] != "" && matriz[0, i] == matriz[1, i] && matriz[1, i] == matriz[2, i])
+                    return true;*/
             }
-            if (matriz[0, 0] != "" && matriz[0, 0] == matriz[1, 1] && matriz[1, 1] == matriz[2, 2]) 
+            if (matriz[0, 0] != "" && matriz[0, 0] == matriz[1, 1] && matriz[1, 1] == matriz[2, 2])
+            {
+                btn1.BackColor = btn5.BackColor = btn9.BackColor = Color.LightGreen;
                 return true;
+            }
             if (matriz[0, 2] != "" && matriz[0, 2] == matriz[1, 1] && matriz[1, 1] == matriz[2, 0])
+            {
+                btn3.BackColor = btn5.BackColor = btn7.BackColor = Color.LightGreen;
                 return true;
+            }
 
             return false;
         }
@@ -106,6 +141,9 @@ namespace JogodaVelha
             btn7.Text = "";
             btn8.Text = "";
             btn9.Text = "";
+            txtVencedor.Text = "";
+            btn1.BackColor = btn2.BackColor = btn3.BackColor = btn4.BackColor = btn5.BackColor = btn6.BackColor = btn7.BackColor = btn8.BackColor = btn9.BackColor = SystemColors.Control;
+
         }
     }
 }
