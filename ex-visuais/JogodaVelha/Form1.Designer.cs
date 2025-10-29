@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblStatus = new System.Windows.Forms.Label();
             this.lblEmpate = new System.Windows.Forms.Label();
             this.lblO = new System.Windows.Forms.Label();
             this.lblX = new System.Windows.Forms.Label();
@@ -37,9 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnResetar = new System.Windows.Forms.Button();
-            this.txtVencedor = new System.Windows.Forms.TextBox();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
+            this.txtStatus = new System.Windows.Forms.TextBox();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
@@ -47,12 +44,13 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblStatus);
             this.groupBox1.Controls.Add(this.lblEmpate);
             this.groupBox1.Controls.Add(this.lblO);
             this.groupBox1.Controls.Add(this.lblX);
@@ -62,20 +60,10 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(258, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(162, 165);
+            this.groupBox1.Size = new System.Drawing.Size(162, 142);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PLACAR";
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(7, 137);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(76, 16);
-            this.lblStatus.TabIndex = 7;
-            this.lblStatus.Text = "Vez do:  X";
             // 
             // lblEmpate
             // 
@@ -143,42 +131,21 @@
             // 
             // btnResetar
             // 
-            this.btnResetar.Location = new System.Drawing.Point(258, 217);
+            this.btnResetar.Location = new System.Drawing.Point(258, 190);
             this.btnResetar.Name = "btnResetar";
-            this.btnResetar.Size = new System.Drawing.Size(162, 43);
+            this.btnResetar.Size = new System.Drawing.Size(162, 63);
             this.btnResetar.TabIndex = 1;
             this.btnResetar.Text = "Resetar";
             this.btnResetar.UseVisualStyleBackColor = true;
             this.btnResetar.Click += new System.EventHandler(this.btnResetar_Click);
             // 
-            // txtVencedor
+            // txtStatus
             // 
-            this.txtVencedor.Enabled = false;
-            this.txtVencedor.Location = new System.Drawing.Point(258, 184);
-            this.txtVencedor.Name = "txtVencedor";
-            this.txtVencedor.Size = new System.Drawing.Size(162, 22);
-            this.txtVencedor.TabIndex = 2;
-            // 
-            // btn1
-            // 
-            this.btn1.BackColor = System.Drawing.SystemColors.Control;
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(12, 13);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(70, 70);
-            this.btn1.TabIndex = 3;
-            this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // btn2
-            // 
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(87, 13);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(70, 70);
-            this.btn2.TabIndex = 4;
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btn_Click);
+            this.txtStatus.Enabled = false;
+            this.txtStatus.Location = new System.Drawing.Point(258, 160);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(162, 22);
+            this.txtStatus.TabIndex = 2;
             // 
             // btn3
             // 
@@ -250,11 +217,32 @@
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btn_Click);
             // 
+            // btn2
+            // 
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Location = new System.Drawing.Point(87, 13);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(70, 70);
+            this.btn2.TabIndex = 4;
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // btn1
+            // 
+            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Location = new System.Drawing.Point(11, 13);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(70, 70);
+            this.btn1.TabIndex = 12;
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 281);
+            this.ClientSize = new System.Drawing.Size(436, 273);
+            this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
@@ -263,8 +251,7 @@
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.txtVencedor);
+            this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.btnResetar);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -287,9 +274,7 @@
         private System.Windows.Forms.Label lblX;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnResetar;
-        private System.Windows.Forms.TextBox txtVencedor;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn5;
@@ -297,7 +282,8 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn1;
     }
 }
 

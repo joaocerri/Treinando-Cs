@@ -20,6 +20,7 @@ namespace JogodaVelha
             InitializeComponent();
             vezDoX = true;
             jogadas = 0;
+            txtStatus.Text = "Vez do:  X";
         }
 
         private void btnResetar_Click(object sender, EventArgs e)
@@ -55,7 +56,7 @@ namespace JogodaVelha
                 else
                     lblO.Text = (int.Parse(lblO.Text) + 1).ToString();
 
-                txtVencedor.Text = vezDoX ? "X VENCEU!!!" : "O VENCEU!!!";
+                txtStatus.Text = vezDoX ? "X VENCEU!!!" : "O VENCEU!!!";
                 MessageBox.Show("O vencedor é: " + (vezDoX ? "X" : "O"));
                 LimparTabuleiro();
                 jogadas = 0;
@@ -66,12 +67,12 @@ namespace JogodaVelha
             {     
                 lblEmpate.Text = (int.Parse(lblEmpate.Text) + 1).ToString();
                 MessageBox.Show("EMPATE!!!");
-                txtVencedor.Text = "EMPATE";
+                txtStatus.Text = "EMPATE";
                 LimparTabuleiro();
             }
             else
                 vezDoX = !vezDoX;
-            lblStatus.Text = vezDoX ? "Vez do:  X" : "Vez do:  O";
+            txtStatus.Text = vezDoX ? "Vez do:  X" : "Vez do:  O";
         }
         public bool VerificarVencedor() 
         {
@@ -109,12 +110,6 @@ namespace JogodaVelha
                         btn3.BackColor = btn6.BackColor = btn9.BackColor = Color.LightGreen;
                     return true;
                 }    
-                    
-
-                /*if (matriz[i, 0] != "" && matriz[i, 0] == matriz[i, 1] && matriz[i, 1] == matriz[i, 2])
-                    return true;
-                if (matriz[0, i] != "" && matriz[0, i] == matriz[1, i] && matriz[1, i] == matriz[2, i])
-                    return true;*/
             }
             if (matriz[0, 0] != "" && matriz[0, 0] == matriz[1, 1] && matriz[1, 1] == matriz[2, 2])
             {
@@ -141,7 +136,7 @@ namespace JogodaVelha
             btn7.Text = "";
             btn8.Text = "";
             btn9.Text = "";
-            txtVencedor.Text = "";
+            txtStatus.Text = "";
             btn1.BackColor = btn2.BackColor = btn3.BackColor = btn4.BackColor = btn5.BackColor = btn6.BackColor = btn7.BackColor = btn8.BackColor = btn9.BackColor = SystemColors.Control;
 
         }
