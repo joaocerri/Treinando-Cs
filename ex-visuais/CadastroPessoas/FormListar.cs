@@ -22,6 +22,5 @@ namespace ContaBancaria
             MessageBox.Show($"Itens na lista agora: {Cadastro.listaPessoas.Count.ToString()}");
             this.cadastroBindingSource.DataSource = Cadastro.listaPessoas;
         }
-
     }
 }
