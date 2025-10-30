@@ -33,9 +33,9 @@ namespace ContaBancaria
         {
             Pessoa pessoa = new Pessoa();
 
-            pessoa.setNome(txtNome.Text);
-            pessoa.setIdade(int.Parse(txtIdade.Text));
-            pessoa.setCPF(txtCPF.Text);
+            pessoa.Nome =txtNome.Text;
+            pessoa.Idade = int.Parse(txtIdade.Text);
+            pessoa.Cpf = txtCPF.Text;
             Cadastro.CadastrarPessoa(pessoa);
 
             MessageBox.Show("Cadastro realizado com sucesso!");

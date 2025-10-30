@@ -32,6 +32,7 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCadastrar
@@ -74,11 +75,22 @@
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(12, 292);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(301, 54);
+            this.btnListar.TabIndex = 4;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 291);
+            this.ClientSize = new System.Drawing.Size(325, 358);
+            this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnPesquisar);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnListar;
     }
 }
 

@@ -40,5 +40,11 @@ namespace ContaBancaria
             FormEditar formeditar = new FormEditar();
             formeditar.Show();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            FormListar formelistar = new FormListar();
+            formelistar.Show();
+        }
     }
 }

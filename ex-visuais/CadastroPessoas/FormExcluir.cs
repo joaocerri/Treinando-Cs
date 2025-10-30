@@ -20,9 +20,9 @@ namespace ContaBancaria
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             Pessoa pessoaBuscada = Cadastro.PesquisarCPF(txtPesquisa.Text);
-            txtNome.Text = pessoaBuscada != null ? pessoaBuscada.getNome() : "Não encontrado";
-            txtIdade.Text = pessoaBuscada != null ? $"{pessoaBuscada.getIdade()}" : "Não encontrado";
-            txtCPF.Text = pessoaBuscada != null ? pessoaBuscada.getCPF() : "Não encontrado";
+            txtNome.Text = pessoaBuscada != null ? pessoaBuscada.Nome : "Não encontrado";
+            txtIdade.Text = pessoaBuscada != null ? $"{pessoaBuscada.Idade}" : "Não encontrado";
+            txtCPF.Text = pessoaBuscada != null ? pessoaBuscada.Cpf : "Não encontrado";
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)

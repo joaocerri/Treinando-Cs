@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace ContaBancaria
 {
     internal class Cadastro
     {
-        static List<Pessoa> listaPessoas = new List<Pessoa>();
+        public static BindingList<Pessoa> listaPessoas = new BindingList<Pessoa>();
         
         public static void CadastrarPessoa(Pessoa newpessoa)
         {
@@ -23,7 +24,7 @@ namespace ContaBancaria
         {
             foreach (Pessoa pessoa in listaPessoas)
             {
-                if (pessoa.getCPF() == cpf)
+                if (pessoa.Cpf == cpf)
                 {
                     return pessoa;
                 }
@@ -34,7 +35,7 @@ namespace ContaBancaria
          {
             foreach (Pessoa pessoa in listaPessoas)
             {
-                if (pessoa.getCPF() == cpf)
+                if (pessoa.Cpf == cpf)
                 {
                     listaPessoas.Remove(pessoa);
                     return true;
@@ -47,9 +48,9 @@ namespace ContaBancaria
         {
             if (newpessoa != null)
             {
-                currentpessoa.setNome(newpessoa.getNome());
-                currentpessoa.setIdade(newpessoa.getIdade());
-                currentpessoa.setCPF(newpessoa.getCPF());
+                currentpessoa.Nome = newpessoa.Nome;
+                currentpessoa.Idade = newpessoa.Idade;
+                currentpessoa.Cpf = newpessoa.Cpf;
 
                 MessageBox.Show("Cadastro editado com sucesso!");
             }

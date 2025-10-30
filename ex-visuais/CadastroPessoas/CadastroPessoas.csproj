@@ -53,6 +53,12 @@
     <Compile Include="FormEditar.Designer.cs">
       <DependentUpon>FormEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListar.Designer.cs">
+      <DependentUpon>FormListar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <EmbeddedResource Include="FormExcluir.resx">
       <DependentUpon>FormExcluir.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListar.resx">
+      <DependentUpon>FormListar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPesquisar.resx">
       <DependentUpon>FormPesquisar.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +113,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Cadastro.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

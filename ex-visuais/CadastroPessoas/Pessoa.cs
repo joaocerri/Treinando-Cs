@@ -8,17 +8,11 @@ namespace ContaBancaria
 {
     internal class Pessoa
     {
-        string Nome;
-        int Idade;
-        string Cpf;
-        public Pessoa()
-        {
-            string nome = "";
-            int idade = 0;
-            string cpf = "";
-        }
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+        public string Cpf { get; set; }
 
-        public string getNome() => Nome;
+        /*public string getNome() => Nome;
         public string getCPF() => Cpf;
         public int getIdade() => Idade;
 
@@ -38,7 +32,7 @@ namespace ContaBancaria
         {
             if (cpf != null)
                 this.Cpf = cpf;
-        }
+        }*/
 
     }
 }

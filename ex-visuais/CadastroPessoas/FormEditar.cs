@@ -20,9 +20,9 @@ namespace ContaBancaria
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             Pessoa pessoaBuscada = Cadastro.PesquisarCPF(txtPesquisa.Text);
-            txtNome.Text = pessoaBuscada != null ? pessoaBuscada.getNome() : "Não encontrado";
-            txtIdade.Text = pessoaBuscada != null ? $"{pessoaBuscada.getIdade()}" : "Não encontrado";
-            txtCPF.Text = pessoaBuscada != null ? pessoaBuscada.getCPF() : "Não encontrado";
+            txtNome.Text = pessoaBuscada != null ? pessoaBuscada.Nome : "Não encontrado";
+            txtIdade.Text = pessoaBuscada != null ? $"{pessoaBuscada.Idade}" : "Não encontrado";
+            txtCPF.Text = pessoaBuscada != null ? pessoaBuscada.Cpf : "Não encontrado";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -34,9 +34,9 @@ namespace ContaBancaria
         {
             Pessoa dadosatuais = Cadastro.PesquisarCPF(txtPesquisa.Text);
             Pessoa novosdados = new Pessoa();
-            novosdados.setNome(txtNome.Text);
-            novosdados.setIdade(int.Parse(txtIdade.Text));
-            novosdados.setCPF(txtCPF.Text);
+            novosdados.Nome = txtNome.Text;
+            novosdados.Idade = int.Parse(txtIdade.Text);
+            novosdados.Cpf = txtCPF.Text;
 
             Cadastro.EditarPessoa(dadosatuais, novosdados);
         }
