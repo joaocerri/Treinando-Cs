@@ -187,7 +187,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormExcluir";
-            this.Text = "FormExcluir";
+            this.Text = "Excluir";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
